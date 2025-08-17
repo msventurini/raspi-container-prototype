@@ -4,7 +4,11 @@ sudo apt-get install -y qemu-system-aarch64
 
 cd ..
 
-mkdir raspi-container
+# mkdir -p raspi-container
+# cd raspi-container
+
+mkdir -p images
+cd images
 
 wget https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2023-05-03/2023-05-03-raspios-bullseye-arm64.img.xz
 
