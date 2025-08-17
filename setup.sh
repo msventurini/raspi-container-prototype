@@ -47,16 +47,16 @@ echo "f"
 
 #!/bin/bash
 echo "Enter your desired login: "
-read login
+read loginData
 # if [ "$login" == "" ]; then
 #     $login = "pi"
 # fi
 echo "$loginData"
 # echo "$login"
 # echo "$login"
-echo "$login"
+echo "$loginData"
 loginData+=":"
-echo "$login"
+echo "$loginData"
 
 result=$(openssl passwd -6)
 echo $result
