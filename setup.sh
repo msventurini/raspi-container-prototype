@@ -14,7 +14,10 @@ cd images
 wget -nc https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2023-05-03/2023-05-03-raspios-bullseye-arm64.img.xz
 # fi
 
+if [[ ! -f 2023-05-03-raspios-bullseye-arm64.img ]]; then
 xz -dk 2023-05-03-raspios-bullseye-arm64.img.xz
+fi
+
 
 fdisk -l ./2023-05-03-raspios-bullseye-arm64.img
 echo "a"
