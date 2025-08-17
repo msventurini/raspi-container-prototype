@@ -59,10 +59,10 @@ loginData+=":"
 echo "$loginData"
 
 result=$(openssl passwd -6)
-echo $result
-echo $result
-echo $result
-echo $result
+echo "$result"
+echo "$result"
+echo "$result"
+echo "$result"
 
 
 
