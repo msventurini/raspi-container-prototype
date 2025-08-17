@@ -2,7 +2,7 @@
 
 sudo apt-get install -y qemu-system-aarch64
 
-cd ..
+# cd ..
 
 # mkdir -p raspi-container
 # cd raspi-container
