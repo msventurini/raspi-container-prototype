@@ -42,6 +42,20 @@ echo "e"
 cp /mnt/image/kernel8.img .
 echo "f"
 
+#  fullname
+
+
+#!/bin/bash
+echo "Enter your desired login: "
+read login
+if [[ "$login" == "" ]]; then
+    $login = "pi"
+fi
+echo "$login"
+echo "$login"
+echo "$login"
+echo "$login"
+
 result=$(openssl passwd -6)
 echo $result
 echo $result
