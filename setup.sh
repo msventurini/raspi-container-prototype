@@ -22,6 +22,8 @@ fi
 fdisk -l ./2023-05-03-raspios-bullseye-arm64.img
 echo "a"
 
+qemu-img resize ./2023-05-03-raspios-bullseye-arm64.img 8G
+echo "aa"
 sudo mkdir /mnt/image
 echo "b"
 
@@ -37,7 +39,7 @@ echo "e"
 cp /mnt/image/kernel8.img ~
 echo "f"
 
-qemu-img resize ./images/2023-05-03-raspios-bullseye-arm64.img 8G
+
 
 # openssl passwd -6
 
