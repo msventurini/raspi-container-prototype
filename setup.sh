@@ -14,16 +14,23 @@ cd images
 wget -nc https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2023-05-03/2023-05-03-raspios-bullseye-arm64.img.xz
 # fi
 
-# fdisk -l ./2023-05-03-raspios-bullseye-arm64.img
+fdisk -l ./2023-05-03-raspios-bullseye-arm64.img
+echo "a"
 
-# sudo mkdir /mnt/image
+sudo mkdir /mnt/image
+echo "b"
 
-# sudo mount -o loop,offset=4194304 ./2023-05-03-raspios-bullseye-arm64.img /mnt/image/
+sudo mount -o loop,offset=4194304 ./2023-05-03-raspios-bullseye-arm64.img /mnt/image/
+echo "c"
 
-# ls -ls /mnt/image/
+ls -ls /mnt/image/
+echo "d"
 
-# cp /mnt/image/bcm2710-rpi-3-b-plus.dtb ~
-# cp /mnt/image/kernel8.img ~
+cp /mnt/image/bcm2710-rpi-3-b-plus.dtb ~
+echo "e"
+
+cp /mnt/image/kernel8.img ~
+echo "f"
 
 # openssl passwd -6
 
