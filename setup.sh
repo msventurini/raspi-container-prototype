@@ -24,7 +24,8 @@ echo "a"
 
 qemu-img resize ./2023-05-03-raspios-bullseye-arm64.img 8G
 echo "aa"
-sudo mkdir /mnt/image
+
+sudo mkdir -p /mnt/image
 echo "b"
 
 sudo mount -o loop,offset=4194304 ./2023-05-03-raspios-bullseye-arm64.img /mnt/image/
@@ -32,6 +33,8 @@ echo "c"
 
 ls -ls /mnt/image/
 echo "d"
+
+cd ..
 
 cp /mnt/image/bcm2710-rpi-3-b-plus.dtb .
 echo "e"
