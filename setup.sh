@@ -48,9 +48,9 @@ echo "f"
 #!/bin/bash
 echo "Enter your desired login: "
 read login
-if [ "$login" == "" ]; then
-    $login = "pi"
-fi
+# if [ "$login" == "" ]; then
+#     $login = "pi"
+# fi
 echo "$login"
 echo "$login"
 echo "$login"
