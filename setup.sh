@@ -33,10 +33,10 @@ echo "c"
 ls -ls /mnt/image/
 echo "d"
 
-cp /mnt/image/bcm2710-rpi-3-b-plus.dtb ~
+cp /mnt/image/bcm2710-rpi-3-b-plus.dtb .
 echo "e"
 
-cp /mnt/image/kernel8.img ~
+cp /mnt/image/kernel8.img .
 echo "f"
 
 
