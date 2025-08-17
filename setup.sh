@@ -42,9 +42,11 @@ echo "e"
 cp /mnt/image/kernel8.img .
 echo "f"
 
-
-
-openssl passwd -6
+result=$(openssl passwd -6)
+echo $result
+echo $result
+echo $result
+echo $result
 
 # senha gerada
 # $6$DLJ421NCDPLOdSpN$6o797./rv6UVfR3PmAxbkElkVILTSlBn4JINIJbfF4W.oNM4XvTLOZA7KVw1MHH0p3icTixDq0xNeZRHKHyjJ.
