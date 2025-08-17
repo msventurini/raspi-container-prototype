@@ -52,24 +52,14 @@ read loginData
 #     $login = "pi"
 # fi
 echo "$loginData"
-# echo "$login"
-# echo "$login"
-# echo "$loginData"
-# loginData+=":"
-# echo "$loginData"
-
 result=$(openssl passwd -6)
-echo "$result"
-echo "$result"
-echo "$result"
-echo "${loginData}:${result}"
 
 
 
 # senha gerada
 # $6$DLJ421NCDPLOdSpN$6o797./rv6UVfR3PmAxbkElkVILTSlBn4JINIJbfF4W.oNM4XvTLOZA7KVw1MHH0p3icTixDq0xNeZRHKHyjJ.
 
-# echo 'pi:$6$DLJ421NCDPLOdSpN$6o797./rv6UVfR3PmAxbkElkVILTSlBn4JINIJbfF4W.oNM4XvTLOZA7KVw1MHH0p3icTixDq0xNeZRHKHyjJ.' | sudo tee /mnt/image/userconf
+echo "${loginData}:${result}" | sudo tee /mnt/image/userconf
 
 # sudo touch /mnt/image/ssh
 
