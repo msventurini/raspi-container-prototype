@@ -10,20 +10,20 @@ cd ..
 mkdir -p images
 cd images
 
-if [ ! -f 2023-05-03-raspios-bullseye-arm64.img.xz ]; then
-wget https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2023-05-03/2023-05-03-raspios-bullseye-arm64.img.xz
-fi
+# if [[ ! -f 2023-05-03-raspios-bullseye-arm64.img.xz ]]; then
+wget -nc https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2023-05-03/2023-05-03-raspios-bullseye-arm64.img.xz
+# fi
 
-fdisk -l ./2023-05-03-raspios-bullseye-arm64.img
+# fdisk -l ./2023-05-03-raspios-bullseye-arm64.img
 
-sudo mkdir /mnt/image
+# sudo mkdir /mnt/image
 
-sudo mount -o loop,offset=4194304 ./2023-05-03-raspios-bullseye-arm64.img /mnt/image/
+# sudo mount -o loop,offset=4194304 ./2023-05-03-raspios-bullseye-arm64.img /mnt/image/
 
-ls -ls /mnt/image/
+# ls -ls /mnt/image/
 
-cp /mnt/image/bcm2710-rpi-3-b-plus.dtb ~
-cp /mnt/image/kernel8.img ~
+# cp /mnt/image/bcm2710-rpi-3-b-plus.dtb ~
+# cp /mnt/image/kernel8.img ~
 
 # openssl passwd -6
 
