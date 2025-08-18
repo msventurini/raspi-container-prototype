@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# sudo apt-get install -y qemu-system-aarch64
-sudo dnf install @virtualization
+sudo apt-get install -y qemu-system-aarch64
+# sudo dnf install @virtualization
 # cd ..
 
 # mkdir -p raspi-container
