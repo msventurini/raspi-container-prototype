@@ -1,26 +1,26 @@
 
 
-apt update
+sudo apt update
 # sudo apt upgrade
 
 #install build tools
-apt install -y which sed make binutils build-essential diffutils gcc  g++  bash patch gzip bzip2 perl  tar cpio unzip rsync file  bc findutils gawk git
+sudo apt install -y which sed make binutils build-essential diffutils gcc  g++  bash patch gzip bzip2 perl  tar cpio unzip rsync file  bc findutils gawk git
 
 #fetching tool
-apt install -y wget
+sudo apt install -y wget
 
 
 #visualizing the menus
-apt install -y libncurses6 libncurses-dev
+sudo apt install -y libncurses6 libncurses-dev
 
 #optionals
-apt install -y python3
+sudo apt install -y python3
 
 git clone https://github.com/buildroot/buildroot.git
 
-# cd buildroot/
+cd buildroot/
 
-# make menuconfig
+make menuconfig
 
 
 # # linux kernel tools gpio tb
