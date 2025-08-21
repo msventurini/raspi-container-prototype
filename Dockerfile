@@ -1,5 +1,8 @@
-FROM docker.io/fedora:42
+FROM ubuntu:25.04
 WORKDIR /content
-# COPY setup.sh ./
-# run dnf install @virtualization
-EXPOSE 8080
+
+# FROM docker.io/fedora:42
+# WORKDIR /content
+# # COPY setup.sh ./
+# # run dnf install @virtualization
+# EXPOSE 8080
